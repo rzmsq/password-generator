@@ -1,0 +1,43 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div id="container">
+            <header id="header-container">
+                <h1 id="name-container">Generate a <br><span>random password</span></h1>
+                <p id="describe-container">Never use an insecure password again.</p>
+            </header>
+            <main id="main-container">
+                <div id="main-action">
+                    <button id="main-btn" type="button" onclick="generatePswd()">
+                        Generate password
+                    </button>
+                    <p>Size password:</p>
+                    <label class="container">9
+                        <input type="radio" name="radio" onclick="changeSizePassword(9)">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">16
+                        <input type="radio" checked="checked" name="radio" onclick="changeSizePassword(16)">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="container">20
+                        <input type="radio" name="radio" onclick="changeSizePassword(20)">
+                        <span class="checkmark"></span>
+                    </label>
+                </div>
+                <hr>
+                <div id="generate-password">
+                    <div class="password">
+                        <p id="passwd1"></p>
+                    </div>
+                    <div class="password">
+                        <p id="passwd2"></p>
+                    </div>
+                </div>
+            </main>  
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

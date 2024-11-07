@@ -1,0 +1,136 @@
+body {
+    font-family: Karla;
+    margin: 0;
+    background-color: #1F2937;
+    color: #fff;
+}
+
+#container{
+    margin-left: 5%;
+}
+
+#name-container{
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#name-container span{
+    color: #10B981;
+}
+
+#describe-container{
+    color: #D5D4D8;
+    margin-top: -1em;
+    font-size: 20px;
+}
+
+#main-btn{
+    font-size: 16px;
+    background-color: #10B981;
+    color: #fff;
+    border: 0px;
+    border-radius: 5px;
+    height: 2em;
+    width: 12em;
+    margin-top: 1.5em;
+}
+
+#main-container hr {
+    position: absolute;
+    width: 90%;
+    margin-top: 2em;
+    border: 1px solid #2F3E53;
+    display: flex;
+}
+
+#generate-password{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.password{
+    background-color: #273549;
+    color: #55F991;
+    width: 15em;
+    height: 3em;
+    margin-top: 5em;
+    margin-right: 5%;
+    border-radius: 5px;
+}
+
+.password p {
+    text-align: center;
+    font-size: 16px;
+}
+
+#main-action{
+    margin-right: 5%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#main-action label{
+    margin-top: 1em;
+}
+
+#main-action p{
+    margin-top: 2em;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 15px;
+  width: 15px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+.container input:checked ~ .checkmark {
+  background-color: #10B981;
+}
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+.container .checkmark:after {
+ 	top: 5px;
+	left: 5px;
+	width: 5px;
+	height: 5px;
+	border-radius: 50%;
+	background: white;
+}
